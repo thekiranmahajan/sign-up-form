@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div className="h-screen w-full flex">
-      <div className="h-full w-1/2 bg-black">
+      <div className="h-full w-1/2 ">
         <img
           className="grayscale h-full w-full object-cover"
           src={leftImg}
@@ -21,8 +21,8 @@ const App = () => {
         />
       </div>
       <div className="h-full w-1/2 flex justify-center ">
-        <div className=" mt-14 bg-gray-500 w-[85%] h-2/3 flex flex-col justify-between">
-          <div className="flex flex-col h-full bg-green-200 justify-between pb-10">
+        <div className=" mt-14  w-[85%] h-3/4 flex flex-col justify-between">
+          <div className="flex flex-col h-full  justify-between pb-10">
             <img className="h-10 w-14" src={logo} alt="logo" />
             <div className="flex items-center justify-between px-10">
               <h2 className="text-2xl font-bold">Sign Up</h2>
@@ -35,7 +35,7 @@ const App = () => {
             layout="vertical"
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
-            className=" w-full py-4 px-10 bg-red-400 flex flex-col"
+            className=" w-full py-4 px-10  flex flex-col"
           >
             <Form.Item
               name="email"
@@ -81,18 +81,25 @@ const App = () => {
             </Form.Item>
 
             <Form.Item className="w-full">
-              <Form.Item name="remember" valuePropName="checked">
-                <Checkbox>Remember me</Checkbox>
+              <div className="flex items-center justify-between  text-sm">
+                <Form.Item name="remember" valuePropName="checked">
+                  <Checkbox className="text-[#696969]">Remember me</Checkbox>
+                </Form.Item>
+                <Form.Item className="text-[#696969]">
+                  Forgot Password?
+                </Form.Item>
+              </div>
+              <Form.Item className="mt-5 mb-0">
+                <Button
+                  htmlType="submit"
+                  className="bg-[#17B582] h-12 outline-none text-base font-semibold w-full mb-0"
+                  type="primary"
+                  shape="round"
+                  size="small"
+                >
+                  Log In
+                </Button>
               </Form.Item>
-              <Button
-                htmlType="submit"
-                className="bg-[#17B582] h-12 outline-none text-base font-semibold w-full"
-                type="primary"
-                shape="round"
-                size="small"
-              >
-                Log In
-              </Button>
             </Form.Item>
           </Form>
         </div>
