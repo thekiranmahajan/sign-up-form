@@ -48,4 +48,4 @@ This UI project demonstrates a React form for user sign-up using Tailwind CSS fo
 - **Tailwind CSS:** A utility-first CSS framework for rapid styling.
 - **Ant Design:** A comprehensive UI component library for React.
 
-<center> **built with ❤️ for React** </center>
+**built with ❤️ for React**
